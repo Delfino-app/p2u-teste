@@ -1,5 +1,153 @@
 /* 여기에 작업 또는 수정할 당신의 css style을 설정하세요. (customizations) */
+.main-contents{
+    height: 80vh !important;
+}
 
+
+/*Header Custom*/
+.header-wrap{
+    border-bottom: 1px solid #17191E;
+}
+.header-title{
+    border-bottom: unset;
+}
+.header-title .header-title-search {
+    width: 300px;
+}
+.header-title .container {
+    justify-content: space-between;
+}
+.content-menu-top-search{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.content-menu-top-search .header-title-search{
+    position: relative;
+    top: unset;
+    left: unset;
+    width: auto;
+    transform: unset;
+}
+.m-header-text{
+    display: none;
+}
+
+/* Estilização básica do menu */
+.litle-menu{
+    padding: 10px 0;
+} 
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    position: relative;
+    margin: 0 10px;
+}
+  
+.menu a {
+    text-decoration: none;
+    color: #2F333C;
+    padding: 10px 15px;
+    display: block;
+    transition: all 0.3s;
+}
+.menu a:hover{
+    color: #A445DE;
+}
+.menu a span{
+    color: #A445DE;
+}
+/* Estilização do dropdown */
+.dropdown-menu {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    display: none;
+    border-radius: 6px;
+    border: 1px solid #2F333C;
+    transition: all .3s;
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    padding: 10px 20px;
+    color: #2F333C;
+    white-space: nowrap;
+    transition: all .3s;
+}
+.dropdown-menu a:hover{
+    color: #2F333C;
+    background-color: #F7F3FF;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+  
+.header-title .header-title-search .eyoom-form .input input {
+    border: unset;
+    color: #000;
+    border-radius: 20px;
+    background-color: #F8F9FC;
+    outline: none;
+    outline: none; /* Remove o contorno padrão do navegador */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Animação suave */
+    padding: 0px 10px;
+}
+.header-title .header-title-search .eyoom-form .input input:focus {
+    border:1px solid #656565d1 !important;
+}
+.header-title .header-title-search .eyoom-form .input-button .button {
+
+    background-color: #F8F9FC;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.header-title .header-title-search .eyoom-form .input-button .button i{
+    color: #656565d1
+}
+.navbar-nav li a{
+    color: #2F333C;
+    padding: 10px 15px;
+    display: block;
+    transition: all 0.3s;
+    font-size: .9375rem !important;
+}
+.navbar-nav .dropdown-menu{
+    border-radius: 6px;
+}
+.navbar-nav li a:hover{
+    color: #A445DE !important;
+    border-bottom:2px solid #A445DE;
+}
+.navbar-nav li.dropdown-mega-menu .nav-link{
+    position: relative;
+    border: unset;
+    padding-left: 0px !important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+.navbar-nav .dropdown-menu li a:hover{
+    background-color: #2F333C !important;
+    color: #fff !important;
+    border-bottom: unset;
+}
+
+/*Footer Custom*/
 .footer{
 
     background-color: #17191E !important;
@@ -66,6 +214,32 @@
     }
     span.nl.white{
         color: #fff !important;
+    }
+    .content-menu-top-search{
+        display: none;
+    }
+    .header-title .title-logo{
+        margin-left: 40%;
+    }
+    .header-title .title-logo img{
+        width: 54px;
+        height: 28px;
+    }
+    .m-header-text{
+        display: block;
+        color: #A445DE;
+        margin-top: 7px;
+    }
+    .header-wrap{
+        border-bottom: unset;
+    }
+    .header-title .container{
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+    .main-contents{
+        height: 50vh !important;
     }
 }
 
